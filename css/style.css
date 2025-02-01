@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "DM Sans", serif;
+}
+h1{
+    font-size: 1.5rem;
+    font-family: "Josefin Sans", serif;
+    text-align: center;
+    color: #4a3885;
+}
+.infoEnviosHeader{
+    font-size: 12px;
+    font-family: "DM Sans", serif;
+    font-weight: bold;
+    color: #4a3885;
+    background-color: #f8fac9;
+    text-align: center;
+}
+header form input{
+    all: unset;
+    padding-bottom: .25rem;
+    border-bottom: 1px solid black;
+    width: 15.625rem;
+}
+.indexNovedades article img{
+    width: 18.75rem;
+    height: 18.75rem;
+}
+.productCard article img{
+    width: 18.75rem;
+    height: 18.75rem;
+}
+.aboutUno .aboutRight img{
+    width: 37.3125rem;
+    height: 26.625rem;
+}
+.aboutDos .aboutLeft img{
+    width: 32.3125rem;
+    height: 24.9375rem;
+}
+/*.logo img{
+    width: 5.015rem;
+    height: 6.25rem;
+    object-fit: contain;
+}*/
+.contactForm input{
+    all: unset;
+    width: 900px;
+    height: 24px;
+    padding: 4px;
+    border: 1px solid #9E91C7;
+}
+.contactForm .contactMensaje{
+    all: unset;
+    width: 900px;
+    height: 300px;
+    padding: 4px;
+    border: 1px solid #9E91C7;
+    text-align: initial;
+}
+.contactForm .contactEnviar{
+    all: unset;
+    background-color: #9E91C7;
+    padding: 10px 30px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.loginForm{
+    padding: .25rem;
+    background-color: #dfd2f4;
+    font-family: "DM Sans", serif;
+}
+.loginForm input{
+    all: unset;
+    width: 500px;
+    height: 24px;
+    padding: 4px;
+    border: 1px solid black;
+    background-color: white;
+}
+.loginForm .loginEnviar{
+    all: unset;
+    background-color:white;
+    padding: 10px 30px;
+    font-family: "DM Sans", serif;
+    color: #4a3885;
+}
+footer h4{
+    font-size: 1rem;
+    font-family: "DM Sans", serif;
+    font-weight: normal;
+    color: #4a3885;
+    text-align: center;
+}
+footer a img{
+    width: 2.25rem;
+}
+footer{
+    background-color: #f8fac9;
+}

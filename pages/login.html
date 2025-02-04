@@ -12,38 +12,44 @@
 </head>
 <body>
     <header>
-        <section class="infoEnviosHeader"> 
-            <p>ENVIOS A TODO CHILE</p>
+        <p class="infoEnviosHeader">ENVIOS A TODO CHILE</p>
+        <section class="box-header">
+            <a href="" class="logo">
+                <img src="../assets/img/logo.png" alt="logo">
+                <h3>Papelería <br>Vina Nyah</h3>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="./productos.html">productos</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./contacto.html">contacto</a></li>
+                    <li><a href="#"><img src="../assets/icon/login.png" alt="">login</a></li>
+                </ul>
+            </nav>
+            <form action="">
+                <input type="search" name="search" id="search" placeholder="Escribe aqui lo que buscas">
+                <img src="../assets/icon/search.png" alt="">
+            </form>
         </section>
-        <a href="../index.html">
-            <img src="../assets/img/logo.png" alt="logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">home</a></li>
-                <li><a href="./productos.html">productos</a></li>
-                <li><a href="./about.html">sobre vina nyah</a></li>
-                <li><a href="./contacto.html">contacto</a></li>
-                <li><a href="#"><img src="../assets/icon/login.png" alt="">login</a></li>
-            </ul>
-        </nav>
-        <form action="">
-            <input type="search" name="search" id="search" placeholder="Escribe aqui lo que buscas">
-            <img src="../assets/icon/search.png" alt="">
-        </form>
         <hr>
     </header>
-    <main>
-        <h1>INICIAR SESION</h1>
-        <form action="" class="loginForm">
-            <label for="email">Correo electronico</label><br>
-            <input type="text" id="email" name="email" required><br>
-    
-            <label for="contrasena">Contraseña</label><br>
-            <input type="password" id="contrasena" name="contrasena" required><br>
-            <input type="submit" class="loginEnviar">
-        </form>
-
+    <main class="main-login">
+        <section class="box-login">
+            <h1>INICIAR SESION</h1>
+            <form action="" class="loginForm">
+                <label for="email">Correo electronico</label><br>
+                <input type="text" id="email" name="email" required><br>
+        
+                <label for="contrasena">Contraseña</label><br>
+                <input type="password" id="contrasena" name="contrasena" required><br>
+                <input type="submit" class="loginEnviar">
+            </form>
+            <section class="botones-login">
+                <button>Recuperar contraseña aqui</button> <br>
+                <button>Crear cuenta de usuario</button>
+            </section>
+        </section>
     </main>
     <footer>
         <h4>Redes Sociales</h4>

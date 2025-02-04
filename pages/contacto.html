@@ -12,42 +12,43 @@
 </head>
 <body>
     <header>
-        <section class="infoEnviosHeader"> 
-            <p>ENVIOS A TODO CHILE</p>
+        <p class="infoEnviosHeader">ENVIOS A TODO CHILE</p>
+        <section class="box-header">
+            <a href="" class="logo">
+                <img src="../assets/img/logo.png" alt="logo">
+                <h3>Papelería <br>Vina Nyah</h3>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="./productos.html">productos</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="#">contacto</a></li>
+                    <li><a href="./login.html"><img src="../assets/icon/login.png" alt="">login</a></li>
+                </ul>
+            </nav>
+            <form action="">
+                <input type="search" name="search" id="search" placeholder="Escribe aqui lo que buscas">
+                <img src="../assets/icon/search.png" alt="">
+            </form>
         </section>
-        <a href="../index.html">
-            <img src="../assets/img/logo.png" alt="logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">home</a></li>
-                <li><a href="./productos.html">productos</a></li>
-                <li><a href="./about.html">sobre vina nyah</a></li>
-                <li><a href="#">contacto</a></li>
-                <li><a href="./login.html"><img src="../assets/icon/login.png" alt="">login</a></li>
-            </ul>
-        </nav>
-        <form action="">
-            <input type="search" name="search" id="search" placeholder="Escribe aqui lo que buscas">
-            <img src="../assets/icon/search.png" alt="">
-        </form>
         <hr>
     </header>
     <main>
-        <h1>CONTACTO</h1>
-        <p>Contactanos por medio del siguiente formulario. Estaremos felices de atender tu consulta</p>
+        <h1 class="titulo-contact">CONTACTO</h1>
+        <p class="descripcion-form">Contactanos por medio del siguiente formulario. Estaremos felices de atender tu consulta</p>
         <form action="" method="" class="contactForm">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-            <label for="correo">Correo electronico:</label><br>
-            <input type="text" id="correo" name="correo" required><br>
+            <label for="correo">Correo electronico:</label>
+            <input type="text" id="correo" name="correo" required>
 
-            <label for="asunto">Asunto:</label><br>
-            <input type="text" id="asunto" name="asunto" required><br>
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
 
-            <label for="mensaje">Mensaje:</label><br>
-            <input type="text" id="mensaje" name="mensaje" class="contactMensaje" required><br>
+            <label for="mensaje">Mensaje:</label>
+            <input type="text" id="mensaje" name="mensaje" class="contactMensaje" required>
             <input type="submit" class="contactEnviar">
 
         </form>

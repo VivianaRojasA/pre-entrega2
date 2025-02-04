@@ -11,14 +11,68 @@ h1{
     font-family: "Josefin Sans", serif;
     text-align: center;
     color: #4a3885;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+li{
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 7.75rem;
+    display: grid;
+    grid-template: 1.5rem 6.25rem/ 100%;
+    grid-template-areas: 
+    "infoenvios"
+    "boxheader";
+    position: sticky;
+    top: 0rem;
 }
 .infoEnviosHeader{
+    grid-area: infoenvios;
     font-size: 12px;
     font-family: "DM Sans", serif;
     font-weight: bold;
     color: #4a3885;
     background-color: #f8fac9;
+    height: 1.5rem;
     text-align: center;
+    align-content: center;
+}
+.box-header{
+    background-color: white;
+    grid-area: boxheader;
+    object-fit: contain;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.box-header a{
+    width: 20%;
+    display: flex;
+    gap: .625rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.box-header a h3{
+    font-family: "Josefin Sans", serif;
+}
+.box-header nav{
+    width: 50%;
+}
+.box-header nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li a:hover{
+    color: #334C23;
+    text-decoration: underline;
+}
+header form{
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 header form input{
     all: unset;
@@ -26,60 +80,199 @@ header form input{
     border-bottom: 1px solid black;
     width: 15.625rem;
 }
-.indexNovedades article img{
+.banner{
+    width: 100%;
+    /*height: 31.25rem;*/
+    margin-bottom: 1.25rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+.banner h1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: center;
+    align-content: center;
+    object-fit: contain;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 
+        .1875rem 0 0 #9E91C7,
+        -0.1875rem 0 0 #9E91C7,
+        0 .1875rem 0 #9E91C7,
+        0 -0.1875rem 0 #9E91C7;
+    order: 2;
+}
+.banner img{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    object-fit: contain;
+    order: 1;
+}
+.indexNovedades{
+    margin: 1.25rem;
+}
+.productos-new article img{
     width: 18.75rem;
     height: 18.75rem;
+    margin-top: 1.25rem;
+}
+.productos-new{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+}
+.titulo-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+}
+.titulo-product select{
+    height: 1.875rem;
+}
+.productCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1.25rem;
+}
+.productCard article{
+    margin-bottom: 30px;
 }
 .productCard article img{
     width: 18.75rem;
     height: 18.75rem;
 }
+.titulo-about{
+    margin-top: 0rem;
+    width: 100%;
+    height: 6.25rem;
+    background-color: #dfd2f4;
+    align-content: center;
+}
+.aboutUno{
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    color: #4a3885;
+    margin-bottom: 1.25rem;
+}
+.aboutUno .aboutLeft p::selection{
+    background-color: #dfd2f4;
+}
 .aboutUno .aboutRight img{
     width: 37.3125rem;
     height: 26.625rem;
+}
+.aboutDos{
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    color: #4a3885;
+    margin-bottom: 1.25rem;
 }
 .aboutDos .aboutLeft img{
     width: 32.3125rem;
     height: 24.9375rem;
 }
-/*.logo img{
-    width: 5.015rem;
+.aboutDos .aboutRight p::selection{
+    background-color: #f8fac9;
+}
+.titulo-contact{
+    margin-top: 0rem;
+    width: 100%;
     height: 6.25rem;
-    object-fit: contain;
-}*/
+    background-color: #dfd2f4;
+    align-content: center;
+}
+.descripcion-form{
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+.descripcion-form::selection{
+    background-color: #dfd2f4;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 100px;
+}
+.contactForm label{
+    margin-bottom: 0.2rem;
+}
 .contactForm input{
     all: unset;
-    width: 900px;
+    width: 90%;
     height: 24px;
     padding: 4px;
     border: 1px solid #9E91C7;
+    margin-bottom: 1.25rem;
+}
+form input:focus{
+    background-color: #f8fac9;
+}
+.contactForm .contactMensaje:focus{
+    background-color: #f8fac9;
 }
 .contactForm .contactMensaje{
     all: unset;
-    width: 900px;
+    width: 90%;
     height: 300px;
     padding: 4px;
     border: 1px solid #9E91C7;
     text-align: initial;
+    margin-bottom: 1.25rem;
 }
 .contactForm .contactEnviar{
     all: unset;
-    background-color: #9E91C7;
+    background-color: #dfd2f4;
     padding: 10px 30px;
     border: 1px solid rgba(0, 0, 0, 0);
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    margin-bottom: 1.ß25rem;
 }
-.loginForm{
+.main-login{
+    display: flex;
+    justify-content: center;
+}
+.box-login{
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+    width: 37.5rem;
+    height: 31.25rem;
     padding: .25rem;
     background-color: #dfd2f4;
     font-family: "DM Sans", serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.loginForm{
+    margin-top: 2.5rem;
 }
 .loginForm input{
     all: unset;
     width: 500px;
     height: 24px;
-    padding: 4px;
+    padding: 5px;
     border: 1px solid black;
     background-color: white;
+    margin-bottom: 1.25rem;
 }
 .loginForm .loginEnviar{
     all: unset;
@@ -87,6 +280,26 @@ header form input{
     padding: 10px 30px;
     font-family: "DM Sans", serif;
     color: #4a3885;
+    margin-bottom: 1.25rem;
+}
+.botones-login button:hover{
+    color: #4a3885;
+}
+.botones-login button{
+    margin: 1rem 0rem;
+    background: none;
+    border: none;
+    color: #334C23;
+    font-size: 1rem;
+    text-decoration:underline;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    padding: .625rem;
+    background-color: #f8fac9;
+    display: block;
+    text-align: center;
 }
 footer h4{
     font-size: 1rem;
@@ -96,8 +309,88 @@ footer h4{
     text-align: center;
 }
 footer a img{
+    margin: 10px;
     width: 2.25rem;
 }
-footer{
-    background-color: #f8fac9;
+@media(max-width:768px){
+    .box-header a h3{
+        font-size: .75rem;
+    }
+    .banner img{
+        width: 100%;
+        margin-top: 0rem;
+    }
+    .main-about section{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .aboutUno .aboutRight img{
+        width: 90%;
+        height: 90%;
+    }
+    .aboutDos .aboutLeft img{
+        width: 90%;
+        height: 90%;
+
+}
+@media(max-width:425px){
+    .logo img{
+        width: 2.2569rem;
+    }
+    .logo h3{
+        font-size: .625rem;
+    }
+    .banner img{
+    width: 100%;
+    margin-top: 0rem;
+    }
+    .banner h1{
+    font-size: 1rem;
+    }
+    .indexNovedades{
+        margin: 1rem;
+    }
+    .indexNovedades h2{
+        font-size: .875rem;
+    }
+    .productos-new article{
+        width: 7.625rem;
+        font-size: .75rem;
+    }
+    .productos-new article img{
+        width: 8.75rem;
+        height: 8.75rem;
+        margin-top: 8px;
+    }
+    .titulo-about{
+        font-size: .875rem;
+        width: 100%;
+        height: 2.8125rem;
+    }
+    .main-about section{
+        font-size: .6875rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .aboutUno .aboutRight img{
+        width: 90%;
+        height: 90%;
+    }
+    .aboutDos .aboutLeft img{
+        width: 90%;
+        height: 90%;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+    }
+    footer h4{
+        font-size: .625rem;
+    }
+    footer a img{
+        width: 1rem;
+        height: 1rem;
+    }
 }

@@ -69,6 +69,9 @@ nav ul li a:hover{
     color: #334C23;
     text-decoration: underline;
 }
+nav #toggle, nav label{
+    display: none;
+}
 header form{
     width: 30%;
     display: flex;
@@ -313,12 +316,58 @@ footer a img{
     width: 2.25rem;
 }
 @media(max-width:768px){
-    .box-header a h3{
-        font-size: .75rem;
+    .box-header{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "wrapped logo search";
+        justify-content: center;
+        align-content: center;
+    }
+    .box-header nav{
+        grid-area: wrapped;
+        font-size: 0,5rem;
+    }
+    .box-header a{
+        grid-area: logo;
+    }
+    .box-header form{
+        grid-area: search;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0 30px;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items:center;
+        padding: 0.5rem;
+        background: white;
+        width: 100%;
+        height: 130px;
+    }
+    .box-header nav .menu{
+        /*width: 100%;
+        overflow: hidden;
+        height: 0;*/
+        position:absolute;
+        left: -6.25rem;
+    }
+    nav label{
+        display: inline-flex;
+        cursor: pointer;
+    }
+    nav #toggle:checked ~ .menu{
+        display: block;
+        position: absolute;
+        left: .625rem;
     }
     .banner img{
         width: 100%;
-        margin-top: 0rem;
     }
     .main-about section{
         display: flex;
@@ -332,14 +381,28 @@ footer a img{
     .aboutDos .aboutLeft img{
         width: 90%;
         height: 90%;
-
+    }
 }
 @media(max-width:425px){
+    .box-header{
+        width: 100vw;
+        margin: 30px;
+        display: flex;
+        gap: 20 px;
+    }
     .logo img{
         width: 2.2569rem;
     }
     .logo h3{
         font-size: .625rem;
+    }
+    nav form{
+        margin-right: 1.875rem;
+        object-fit: contain;
+        all: unset;
+        padding-bottom: .25rem;
+        border-bottom: 1px solid black;
+        width: 3.125rem;
     }
     .banner img{
     width: 100%;

@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -19,13 +23,19 @@
                 <h3>Papelería <br>Vina Nyah</h3>
             </a>
             <nav>
-                <ul>
-                    <li><a href="../index.html">home</a></li>
-                    <li><a href="#">productos</a></li>
-                    <li><a href="./about.html">about</a></li>
-                    <li><a href="./contacto.html">contacto</a></li>
-                    <li><a href="./login.html"><img src="../assets/icon/login.png" alt="">login</a></li>
-                </ul>
+                <div>
+                    <input type="checkbox" name="checkbox" id="toggle">    
+                    <label for="toggle"><i class="material-icons">menu</i></label>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="../index.html">home</a></li>
+                        <li><a href="#">productos</a></li>
+                        <li><a href="./about.html">about</a></li>
+                        <li><a href="./contacto.html">contacto</a></li>
+                        <li><a href="./login.html"><img src="../assets/icon/login.png" alt="">login</a></li>
+                    </ul>
+                </div>
             </nav>
             <form action="">
                 <input type="search" name="search" id="search" placeholder="Escribe aqui lo que buscas">
